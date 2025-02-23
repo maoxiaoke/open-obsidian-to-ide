@@ -1,0 +1,9 @@
+{
+	"id": "open-in-vscode",
+	"name": "Open in VSCode",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Open current Obsidian vault in VSCode",
+	"author": "nazha",
+	"isDesktopOnly": true
+}
