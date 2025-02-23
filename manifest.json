@@ -1,9 +1,9 @@
 {
-	"id": "open-in-vscode",
-	"name": "Open in VSCode",
+	"id": "open-obsidian-to-ide",
+	"name": "Open in IDE",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Open current Obsidian vault in VSCode",
+	"description": "Open current Obsidian vault in your preferred IDE (VSCode, Cursor, Windsurf, or custom)",
 	"author": "nazha",
 	"isDesktopOnly": true
 }

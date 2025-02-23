@@ -1,15 +1,15 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "open-obsidian-to-ide",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Open current Obsidian vault in your preferred IDE (VSCode, Cursor, Windsurf, or custom)",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": ["obsidian", "plugin", "ide", "vscode", "cursor", "windsurf"],
+	"author": "nazha",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^16.11.6",
