@@ -46,8 +46,10 @@ export default class OpenObsidianToIDE extends Plugin {
 				};
 
 				const { command, args } = editorCommands[this.settings.editorType];
+				// Escape the path for shell usage
+				const escapedPath = vaultPath.replace(/(["\s'$`\\])/g, '\\$1');
 				const finalArgs =
-					this.settings.editorType === 'vscode' ? [...args, vaultPath] : [vaultPath];
+					this.settings.editorType === 'vscode' ? [...args, escapedPath] : [escapedPath];
 
 				if (this.settings.editorType === 'custom' && !this.settings.customCommand) {
 					throw new Error('Custom command is not configured');
